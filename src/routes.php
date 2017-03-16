@@ -1,3 +1,3 @@
 <?php
 
-Route::get('a/{advert_id}', 'Adumskis\LaravelAdvert\AdvertManagerController@index');
+Route::get('a/{advert_id}', 'LudwigHeymbeeck\LaravelAdvert\AdvertManagerController@index');
