@@ -1,6 +1,9 @@
 # Laravel Advert
 Simple package that helps add advert to Laravel 5 websites. What is more it allows to see every advert clicks and views count for some statistics.
 
+## CHANGES
+changed in order to facilitate multi-to-multi ads for eyesmart by PlanetVA
+
 ### Installation
 First require package with composer:
 ```sh
