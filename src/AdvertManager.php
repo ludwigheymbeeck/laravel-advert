@@ -1,9 +1,9 @@
 <?php
-namespace Adumskis\LaravelAdvert;
+namespace LudwigHeymbeeck\LaravelAdvert;
 
 
-use Adumskis\LaravelAdvert\Model\Advert;
-use Adumskis\LaravelAdvert\Model\AdvertCategory;
+use App\Models\Advertisement\Advert;
+use App\Models\Advertisement\Advertcategory;
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
@@ -39,7 +39,7 @@ class AdvertManager {
      * @return HtmlString|string
      */
     public function getHTML($type, $duplicate = false){
-        $advert_category = AdvertCategory::where('type', $type)->first();
+        $advert_category = Advertcategory::where('type', $type)->first();
         if(!$advert_category){
             return '';
         }
