@@ -1,5 +1,5 @@
 <?php
-namespace Adumskis\LaravelAdvert;
+namespace LudwigHeymbeeck\LaravelAdvert;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -19,12 +19,7 @@ class AdvertServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/../config/config.php' => config_path('laravel-advert.php'),
-            __DIR__.'/../migrations/2016_03_11_202301_create_advert_categories_table.php' => database_path('migrations/2016_03_11_202301_create_advert_categories_table.php'),
-            __DIR__.'/../migrations/2016_03_11_202607_create_adverts_table.php' => database_path('migrations/2016_03_11_202607_create_adverts_table.php'),
-            __DIR__.'/../view/advert.blade.php' => resource_path('views/partials/advert.blade.php')
-        ]);
+
     }
 
     /**
@@ -35,7 +30,7 @@ class AdvertServiceProvider extends ServiceProvider
     public function register()
     {
         include __DIR__ . '/routes.php';
-        $this->app->make('Adumskis\LaravelAdvert\AdvertManagerController');
+        $this->app->make('LudwigHeymbeeck\LaravelAdvert\AdvertManagerController');
         $this->app->singleton('advert_manager', function() {
             return new AdvertManager();
         });
