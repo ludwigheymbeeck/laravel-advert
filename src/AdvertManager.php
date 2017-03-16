@@ -59,7 +59,7 @@ class AdvertManager {
         if($advert){
             $advert->plusViews();
             $this->used[$type][] = $advert->id;
-            $html = View::make('partials.advert', compact('advert'))->render();
+            $html = View::make('includes.partials.advert', compact('advert'))->render();
             return new HtmlString($html);
         } else {
             return '';
