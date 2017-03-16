@@ -29,7 +29,6 @@ class AdvertServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        include __DIR__ . '/routes.php';
         $this->app->make('LudwigHeymbeeck\LaravelAdvert\AdvertManagerController');
         $this->app->singleton('advert_manager', function() {
             return new AdvertManager();
