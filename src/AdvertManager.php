@@ -2,8 +2,8 @@
 namespace LudwigHeymbeeck\LaravelAdvert;
 
 
-use App\Models\Advertisement\Advert;
-use App\Models\Advertisement\Advertcategory;
+use App\Models\Advertisement\Advert\Advert;
+use App\Models\Advertisement\Advertcategory\Advertcategory;
 use Illuminate\Container\Container;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\HtmlString;
