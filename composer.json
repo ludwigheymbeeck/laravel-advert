@@ -1,10 +1,10 @@
 {
-    "name": "adumskis/laravel-advert",
-    "description": "Advertising helper for laravel",
+    "name": "ludwigheymbeeck/laravel-advert",
+    "description": "Advertising helper for laravel - based on adumskis/laravel-advert",
     "authors": [
         {
-            "name": "Algirdas",
-            "email": "algirdasdum@gmail.com"
+            "name": "PlanetVA",
+            "email": "info@planetva.com"
         }
     ],
     "minimum-stability": "dev",
@@ -13,7 +13,7 @@
     },
     "autoload": {
       "psr-4": {
-        "Adumskis\\LaravelAdvert\\": "src/"
+        "LudwigHeymbeeck\\LaravelAdvert\\": "src/"
       }
     }
 }
