@@ -4,7 +4,7 @@ namespace LudwigHeymbeeck\LaravelAdvert;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Model\Advertisement\Advert;
+use App\Model\Advertisement\Advert\Advert;
 
 use App\Http\Requests;
 
