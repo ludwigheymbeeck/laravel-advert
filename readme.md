@@ -7,7 +7,7 @@ changed in order to facilitate multi-to-multi ads for eyesmart by PlanetVA
 ### Installation
 First require package with composer:
 ```sh
-$ composer require adumskis/laravel-advert dev-master
+$ composer require ludwigheymbeeck/laravel-advert dev-master
 ```
 Then add service provider to config/app.php:
 ```php
