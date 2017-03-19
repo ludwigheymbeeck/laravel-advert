@@ -53,7 +53,7 @@ class AdvertManager {
                 }
             })
             //->active()
-            ->orderBy('viewed_at', 'ASC')
+            ->orderByRaw('RAND()') /* display random advert if there are more than one assigned to same category */
             ->first();
 
         if($advert){
