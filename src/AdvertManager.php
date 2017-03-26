@@ -41,7 +41,9 @@ class AdvertManager {
     public function getHTML($type, $duplicate = false){
         $advert_category = Advertcategory::where('type', $type)->first();
         if(!$advert_category){
-            return '';
+            $html = "&nbsp;";
+            return new HtmlString($html);
+            // return '';
         }
 
         $advert = $advert_category
@@ -62,7 +64,9 @@ class AdvertManager {
             $html = View::make('includes.partials.advert', compact('advert'))->render();
             return new HtmlString($html);
         } else {
-            return '';
+            $html = "&nbsp;";
+            return new HtmlString($html);
+            // return '';
         }
     }
 
